@@ -1,0 +1,1 @@
+reject http $HOME_NET any -> $EXTERNAL_NET 80 (http.host; dotprefix; content:"dev.classmethod.jp"; endswith; msg:"Reject HTTP domain"; sid:1000011; rev:1;)
